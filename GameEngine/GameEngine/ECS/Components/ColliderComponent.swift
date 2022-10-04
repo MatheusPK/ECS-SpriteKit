@@ -36,6 +36,7 @@ class ColliderComponent: GKComponent {
         physicsBody.categoryBitMask = type.getBitMask()
         physicsBody.collisionBitMask = getCollisionBitMask()
         physicsBody.contactTestBitMask = getContactTestBitMask()
+        physicsBody.affectedByGravity = false
         node.physicsBody = physicsBody
     }
     
