@@ -9,12 +9,30 @@
 /* Begin PBXBuildFile section */
 		09D2C19B28E9272800D33442 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2C19A28E9272800D33442 /* AppDelegate.swift */; };
 		09D2C19D28E9272800D33442 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2C19C28E9272800D33442 /* SceneDelegate.swift */; };
-		09D2C19F28E9272800D33442 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2C19E28E9272800D33442 /* GameViewController.swift */; };
+		09D2C19F28E9272800D33442 /* ItemCatcherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2C19E28E9272800D33442 /* ItemCatcherViewController.swift */; };
 		09D2C1A428E9272A00D33442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D2C1A328E9272A00D33442 /* Assets.xcassets */; };
 		09D2C1A728E9272A00D33442 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D2C1A528E9272A00D33442 /* LaunchScreen.storyboard */; };
 		09D2C1B228E9272A00D33442 /* GameEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2C1B128E9272A00D33442 /* GameEngineTests.swift */; };
 		09D2C1BC28E9272A00D33442 /* GameEngineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2C1BB28E9272A00D33442 /* GameEngineUITests.swift */; };
 		09D2C1BE28E9272A00D33442 /* GameEngineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2C1BD28E9272A00D33442 /* GameEngineUITestsLaunchTests.swift */; };
+		09D2C1CD28E9295A00D33442 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2C1CC28E9295A00D33442 /* GameScene.swift */; };
+		09D2C1CF28E9C8E400D33442 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2C1CE28E9C8E400D33442 /* System.swift */; };
+		09D2C1D128EB197E00D33442 /* SpriteComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2C1D028EB197E00D33442 /* SpriteComponent.swift */; };
+		09D2C1D328EB221800D33442 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2C1D228EB221800D33442 /* GameView.swift */; };
+		09D2C1D628EB29A200D33442 /* ItemCatcherConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2C1D528EB29A200D33442 /* ItemCatcherConfigurator.swift */; };
+		09D2C1D828EB2B5A00D33442 /* ModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2C1D728EB2B5A00D33442 /* ModuleFactory.swift */; };
+		09D2C1DA28EB315C00D33442 /* ItemCatcherSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2C1D928EB315C00D33442 /* ItemCatcherSystem.swift */; };
+		09D2C1DC28EB316A00D33442 /* ItemCatcherScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2C1DB28EB316A00D33442 /* ItemCatcherScene.swift */; };
+		09D2C1DE28EB317E00D33442 /* ItemCatcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2C1DD28EB317E00D33442 /* ItemCatcherView.swift */; };
+		09D2C1E228EB5B8700D33442 /* PlayerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2C1E128EB5B8700D33442 /* PlayerEntity.swift */; };
+		09D2C1E928EB5EE600D33442 /* caveiraDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 09D2C1E428EB5EE500D33442 /* caveiraDown.png */; };
+		09D2C1EA28EB5EE600D33442 /* caveiraUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 09D2C1E528EB5EE500D33442 /* caveiraUp.png */; };
+		09D2C1EB28EB5EE600D33442 /* caveiraLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = 09D2C1E628EB5EE500D33442 /* caveiraLeft.png */; };
+		09D2C1EC28EB5EE600D33442 /* caveiraRight.png in Resources */ = {isa = PBXBuildFile; fileRef = 09D2C1E728EB5EE600D33442 /* caveiraRight.png */; };
+		09D2C1ED28EB5EE600D33442 /* caveira.png in Resources */ = {isa = PBXBuildFile; fileRef = 09D2C1E828EB5EE600D33442 /* caveira.png */; };
+		09D2C1EF28EB5FC700D33442 /* AnimatorComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2C1EE28EB5FC700D33442 /* AnimatorComponent.swift */; };
+		09D2C1F128EB600000D33442 /* TouchComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2C1F028EB600000D33442 /* TouchComponent.swift */; };
+		09D2C1F328EB6E4200D33442 /* ColliderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2C1F228EB6E4200D33442 /* ColliderComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +56,7 @@
 		09D2C19728E9272800D33442 /* GameEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D2C19A28E9272800D33442 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09D2C19C28E9272800D33442 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		09D2C19E28E9272800D33442 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		09D2C19E28E9272800D33442 /* ItemCatcherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCatcherViewController.swift; sourceTree = "<group>"; };
 		09D2C1A328E9272A00D33442 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09D2C1A628E9272A00D33442 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09D2C1A828E9272A00D33442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +65,24 @@
 		09D2C1B728E9272A00D33442 /* GameEngineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameEngineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D2C1BB28E9272A00D33442 /* GameEngineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEngineUITests.swift; sourceTree = "<group>"; };
 		09D2C1BD28E9272A00D33442 /* GameEngineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEngineUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		09D2C1CC28E9295A00D33442 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		09D2C1CE28E9C8E400D33442 /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
+		09D2C1D028EB197E00D33442 /* SpriteComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteComponent.swift; sourceTree = "<group>"; };
+		09D2C1D228EB221800D33442 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		09D2C1D528EB29A200D33442 /* ItemCatcherConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCatcherConfigurator.swift; sourceTree = "<group>"; };
+		09D2C1D728EB2B5A00D33442 /* ModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleFactory.swift; sourceTree = "<group>"; };
+		09D2C1D928EB315C00D33442 /* ItemCatcherSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCatcherSystem.swift; sourceTree = "<group>"; };
+		09D2C1DB28EB316A00D33442 /* ItemCatcherScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCatcherScene.swift; sourceTree = "<group>"; };
+		09D2C1DD28EB317E00D33442 /* ItemCatcherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCatcherView.swift; sourceTree = "<group>"; };
+		09D2C1E128EB5B8700D33442 /* PlayerEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerEntity.swift; sourceTree = "<group>"; };
+		09D2C1E428EB5EE500D33442 /* caveiraDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = caveiraDown.png; sourceTree = "<group>"; };
+		09D2C1E528EB5EE500D33442 /* caveiraUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = caveiraUp.png; sourceTree = "<group>"; };
+		09D2C1E628EB5EE500D33442 /* caveiraLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = caveiraLeft.png; sourceTree = "<group>"; };
+		09D2C1E728EB5EE600D33442 /* caveiraRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = caveiraRight.png; sourceTree = "<group>"; };
+		09D2C1E828EB5EE600D33442 /* caveira.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = caveira.png; sourceTree = "<group>"; };
+		09D2C1EE28EB5FC700D33442 /* AnimatorComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorComponent.swift; sourceTree = "<group>"; };
+		09D2C1F028EB600000D33442 /* TouchComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchComponent.swift; sourceTree = "<group>"; };
+		09D2C1F228EB6E4200D33442 /* ColliderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColliderComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +133,15 @@
 		09D2C19928E9272800D33442 /* GameEngine */ = {
 			isa = PBXGroup;
 			children = (
+				09D2C1E328EB5D1200D33442 /* skull.atlas */,
 				09D2C19A28E9272800D33442 /* AppDelegate.swift */,
 				09D2C19C28E9272800D33442 /* SceneDelegate.swift */,
-				09D2C19E28E9272800D33442 /* GameViewController.swift */,
+				09D2C1CB28E9293F00D33442 /* ECS */,
+				09D2C1D428EB296100D33442 /* ExampleItemCatcher */,
 				09D2C1A328E9272A00D33442 /* Assets.xcassets */,
 				09D2C1A528E9272A00D33442 /* LaunchScreen.storyboard */,
 				09D2C1A828E9272A00D33442 /* Info.plist */,
+				09D2C1D728EB2B5A00D33442 /* ModuleFactory.swift */,
 			);
 			path = GameEngine;
 			sourceTree = "<group>";
@@ -122,6 +161,61 @@
 				09D2C1BD28E9272A00D33442 /* GameEngineUITestsLaunchTests.swift */,
 			);
 			path = GameEngineUITests;
+			sourceTree = "<group>";
+		};
+		09D2C1CB28E9293F00D33442 /* ECS */ = {
+			isa = PBXGroup;
+			children = (
+				09D2C1E028EB5B7100D33442 /* Components */,
+				09D2C1DF28EB5B6A00D33442 /* Entities */,
+				09D2C1CC28E9295A00D33442 /* GameScene.swift */,
+				09D2C1CE28E9C8E400D33442 /* System.swift */,
+				09D2C1D228EB221800D33442 /* GameView.swift */,
+			);
+			path = ECS;
+			sourceTree = "<group>";
+		};
+		09D2C1D428EB296100D33442 /* ExampleItemCatcher */ = {
+			isa = PBXGroup;
+			children = (
+				09D2C1D528EB29A200D33442 /* ItemCatcherConfigurator.swift */,
+				09D2C19E28E9272800D33442 /* ItemCatcherViewController.swift */,
+				09D2C1DD28EB317E00D33442 /* ItemCatcherView.swift */,
+				09D2C1DB28EB316A00D33442 /* ItemCatcherScene.swift */,
+				09D2C1D928EB315C00D33442 /* ItemCatcherSystem.swift */,
+			);
+			path = ExampleItemCatcher;
+			sourceTree = "<group>";
+		};
+		09D2C1DF28EB5B6A00D33442 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				09D2C1E128EB5B8700D33442 /* PlayerEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		09D2C1E028EB5B7100D33442 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				09D2C1D028EB197E00D33442 /* SpriteComponent.swift */,
+				09D2C1EE28EB5FC700D33442 /* AnimatorComponent.swift */,
+				09D2C1F028EB600000D33442 /* TouchComponent.swift */,
+				09D2C1F228EB6E4200D33442 /* ColliderComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		09D2C1E328EB5D1200D33442 /* skull.atlas */ = {
+			isa = PBXGroup;
+			children = (
+				09D2C1E828EB5EE600D33442 /* caveira.png */,
+				09D2C1E428EB5EE500D33442 /* caveiraDown.png */,
+				09D2C1E628EB5EE500D33442 /* caveiraLeft.png */,
+				09D2C1E728EB5EE600D33442 /* caveiraRight.png */,
+				09D2C1E528EB5EE500D33442 /* caveiraUp.png */,
+			);
+			path = skull.atlas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,7 +322,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09D2C1EC28EB5EE600D33442 /* caveiraRight.png in Resources */,
+				09D2C1EA28EB5EE600D33442 /* caveiraUp.png in Resources */,
+				09D2C1EB28EB5EE600D33442 /* caveiraLeft.png in Resources */,
+				09D2C1E928EB5EE600D33442 /* caveiraDown.png in Resources */,
 				09D2C1A728E9272A00D33442 /* LaunchScreen.storyboard in Resources */,
+				09D2C1ED28EB5EE600D33442 /* caveira.png in Resources */,
 				09D2C1A428E9272A00D33442 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,9 +353,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09D2C19F28E9272800D33442 /* GameViewController.swift in Sources */,
+				09D2C1CF28E9C8E400D33442 /* System.swift in Sources */,
+				09D2C1DC28EB316A00D33442 /* ItemCatcherScene.swift in Sources */,
+				09D2C1D828EB2B5A00D33442 /* ModuleFactory.swift in Sources */,
+				09D2C1F328EB6E4200D33442 /* ColliderComponent.swift in Sources */,
+				09D2C19F28E9272800D33442 /* ItemCatcherViewController.swift in Sources */,
+				09D2C1F128EB600000D33442 /* TouchComponent.swift in Sources */,
+				09D2C1E228EB5B8700D33442 /* PlayerEntity.swift in Sources */,
+				09D2C1DE28EB317E00D33442 /* ItemCatcherView.swift in Sources */,
+				09D2C1EF28EB5FC700D33442 /* AnimatorComponent.swift in Sources */,
 				09D2C19B28E9272800D33442 /* AppDelegate.swift in Sources */,
+				09D2C1CD28E9295A00D33442 /* GameScene.swift in Sources */,
+				09D2C1D128EB197E00D33442 /* SpriteComponent.swift in Sources */,
+				09D2C1DA28EB315C00D33442 /* ItemCatcherSystem.swift in Sources */,
 				09D2C19D28E9272800D33442 /* SceneDelegate.swift in Sources */,
+				09D2C1D628EB29A200D33442 /* ItemCatcherConfigurator.swift in Sources */,
+				09D2C1D328EB221800D33442 /* GameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
