@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let window = UIWindow(windowScene: windowScene)
         
-        let viewController = GameViewController()
+        let viewController = ItemCatcherConfigurator.make(with: .init())
         
         window.rootViewController = UINavigationController(rootViewController: viewController)
         
