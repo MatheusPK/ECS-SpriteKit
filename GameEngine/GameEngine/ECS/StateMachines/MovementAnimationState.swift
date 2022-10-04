@@ -47,3 +47,10 @@ class RightAnimationState: MovementAnimationState {
         spriteComponent.node.texture = texture
     }
 }
+
+class IdleAnimationState: MovementAnimationState {
+    override func didEnter(from previousState: GKState?) {
+        guard let spriteComponent = entity.component(ofType: SpriteComponent.self) else { return }
+        spriteComponent.node.texture = texture
+    }
+}

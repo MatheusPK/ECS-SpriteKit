@@ -41,6 +41,7 @@ class MovementComponent: GKComponent {
                 case .right: moveVector = CGVector(dx: velocity, dy: 0)
                 case .up: moveVector = CGVector(dx: 0, dy: velocity)
                 case .down: moveVector = CGVector(dx: 0, dy: -velocity)
+                case .idle: moveVector = CGVector(dx: 0, dy: 0)
             }
             
             return SKAction.move(by: moveVector, duration: animationDuration)
@@ -54,5 +55,6 @@ extension MovementComponent {
         case right
         case up
         case down
+        case idle
     }
 }

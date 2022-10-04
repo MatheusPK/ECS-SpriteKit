@@ -30,6 +30,7 @@
 		09D2C1F528EBC76500D33442 /* MovementComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2C1F428EBC76500D33442 /* MovementComponent.swift */; };
 		09D2C1F728EBCBF800D33442 /* TouchMovementComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2C1F628EBCBF800D33442 /* TouchMovementComponent.swift */; };
 		09D2C1F928EC743600D33442 /* MovementAnimationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2C1F828EC743600D33442 /* MovementAnimationState.swift */; };
+		09D2C20528ECA7C500D33442 /* FaceTrackingMovementComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2C20428ECA7C500D33442 /* FaceTrackingMovementComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		09D2C1F428EBC76500D33442 /* MovementComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementComponent.swift; sourceTree = "<group>"; };
 		09D2C1F628EBCBF800D33442 /* TouchMovementComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchMovementComponent.swift; sourceTree = "<group>"; };
 		09D2C1F828EC743600D33442 /* MovementAnimationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementAnimationState.swift; sourceTree = "<group>"; };
+		09D2C20428ECA7C500D33442 /* FaceTrackingMovementComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTrackingMovementComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 				09D2C1F228EB6E4200D33442 /* ColliderComponent.swift */,
 				09D2C1F428EBC76500D33442 /* MovementComponent.swift */,
 				09D2C1F628EBCBF800D33442 /* TouchMovementComponent.swift */,
+				09D2C20428ECA7C500D33442 /* FaceTrackingMovementComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				09D2C1E228EB5B8700D33442 /* PlayerEntity.swift in Sources */,
 				09D2C1DE28EB317E00D33442 /* ItemCatcherView.swift in Sources */,
 				09D2C1EF28EB5FC700D33442 /* AnimatorComponent.swift in Sources */,
+				09D2C20528ECA7C500D33442 /* FaceTrackingMovementComponent.swift in Sources */,
 				09D2C19B28E9272800D33442 /* AppDelegate.swift in Sources */,
 				09D2C1CD28E9295A00D33442 /* GameScene.swift in Sources */,
 				09D2C1D128EB197E00D33442 /* SpriteComponent.swift in Sources */,

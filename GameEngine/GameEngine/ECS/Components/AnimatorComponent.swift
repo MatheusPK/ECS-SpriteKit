@@ -30,8 +30,10 @@ class AnimatorComponent: GKComponent {
             UpAnimationState(entity: entity!, texture: sprites.textureNamed("caveiraUp")),
             DownAnimationState(entity: entity!, texture: sprites.textureNamed("caveiraDown")),
             LeftAnimationState(entity: entity!, texture: sprites.textureNamed("caveiraLeft")),
-            RightAnimationState(entity: entity!, texture: sprites.textureNamed("caveiraRight"))
+            RightAnimationState(entity: entity!, texture: sprites.textureNamed("caveiraRight")),
+            IdleAnimationState(entity: entity!, texture: sprites.textureNamed("caveira"))
         ])
+        stateMachine?.enter(IdleAnimationState.self)
     }
     
     func enterState(for direction: MovementComponent.Direction) {
@@ -40,6 +42,7 @@ class AnimatorComponent: GKComponent {
             case .right: stateMachine?.enter(RightAnimationState.self)
             case .up: stateMachine?.enter(UpAnimationState.self)
             case .down: stateMachine?.enter(DownAnimationState.self)
+            case .idle: stateMachine?.enter(IdleAnimationState.self)
         }
     }
     
