@@ -14,7 +14,7 @@ class PlayerEntity: GKEntity {
         super.init()
         addComponent(SpriteComponent(color: .blue, size: CGSize(width: 50, height: 50)))
         addComponent(ColliderComponent(type: .player, collidibleTypes: [.all], contactTestTypes: [.all]))
-        addComponent(MovementComponent(velocity: 7, animationDuration: 0.05))
+        addComponent(MovementComponent(velocity: 7, animationDuration: 0.0))
         addComponent(TouchMovementComponent())
         addComponent(FaceTrackingMovementComponent())
         addComponent(AnimatorComponent(type: .skull))

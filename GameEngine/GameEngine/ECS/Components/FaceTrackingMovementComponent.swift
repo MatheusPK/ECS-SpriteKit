@@ -38,50 +38,32 @@ extension FaceTrackingMovementComponent: ARSessionDelegate {
         guard let mouthLeft = faceAnchor.blendShapes[.mouthRight] as? Float else { return }
         guard let mouthRight = faceAnchor.blendShapes[.mouthLeft] as? Float else { return }
         
-        var direction = MovementComponent.Direction.idle
+        var directions: [MovementComponent.Direction] = [.idle]
         
         if browInnerUp > 0.5 {
-            direction = .up
+            directions.append(.up)
         }
         
         if (leftBrownDown > 0.3 && rightBrownDown > 0.3) {
-            direction = .down
+            directions.append(.down)
         }
         
         if mouthLeft > 0.4 {
-            direction = .left
+            directions.append(.left)
         }
         
         if mouthRight > 0.4 {
-            direction = .right
+            directions.append(.right)
         }
         
         if let movementComponent = entity?.component(ofType: MovementComponent.self) {
-            movementComponent.move(to: direction)
+            for direction in directions {
+                movementComponent.move(to: direction)
+            }
         }
     }
 }
 
-class FaceTrackingView: ARSCNView, ARSCNViewDelegate {
 
-    //MARK: - Initializers
-    init() {
-        super.init(frame: .zero, options: nil)
-        scene = SCNScene()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    //MARK: - Public Methods
-    public func startSession(){
-        session.run(ARFaceTrackingConfiguration(), options: [.resetTracking, .removeExistingAnchors])
-    }
-    
-    public func pauseSession(){
-        session.pause()
-    }
-}
 
 

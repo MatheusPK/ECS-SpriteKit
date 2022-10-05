@@ -31,6 +31,7 @@
 		09D2C1F728EBCBF800D33442 /* TouchMovementComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2C1F628EBCBF800D33442 /* TouchMovementComponent.swift */; };
 		09D2C1F928EC743600D33442 /* MovementAnimationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2C1F828EC743600D33442 /* MovementAnimationState.swift */; };
 		09D2C20528ECA7C500D33442 /* FaceTrackingMovementComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2C20428ECA7C500D33442 /* FaceTrackingMovementComponent.swift */; };
+		09D2C20728ED22C200D33442 /* FaceTrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2C20628ED22C200D33442 /* FaceTrackingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		09D2C1F628EBCBF800D33442 /* TouchMovementComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchMovementComponent.swift; sourceTree = "<group>"; };
 		09D2C1F828EC743600D33442 /* MovementAnimationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementAnimationState.swift; sourceTree = "<group>"; };
 		09D2C20428ECA7C500D33442 /* FaceTrackingMovementComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTrackingMovementComponent.swift; sourceTree = "<group>"; };
+		09D2C20628ED22C200D33442 /* FaceTrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTrackingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			children = (
 				09D2C19A28E9272800D33442 /* AppDelegate.swift */,
 				09D2C19C28E9272800D33442 /* SceneDelegate.swift */,
+				09D2C20628ED22C200D33442 /* FaceTrackingView.swift */,
 				09D2C1CB28E9293F00D33442 /* ECS */,
 				09D2C1D428EB296100D33442 /* ExampleItemCatcher */,
 				09D2C1A328E9272A00D33442 /* Assets.xcassets */,
@@ -360,6 +363,7 @@
 				09D2C1D628EB29A200D33442 /* ItemCatcherConfigurator.swift in Sources */,
 				09D2C1F928EC743600D33442 /* MovementAnimationState.swift in Sources */,
 				09D2C1F728EBCBF800D33442 /* TouchMovementComponent.swift in Sources */,
+				09D2C20728ED22C200D33442 /* FaceTrackingView.swift in Sources */,
 				09D2C1D328EB221800D33442 /* GameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
