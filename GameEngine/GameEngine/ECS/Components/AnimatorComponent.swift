@@ -27,11 +27,11 @@ class AnimatorComponent: GKComponent {
     
     override func didAddToEntity() {
         stateMachine = GKStateMachine(states: [
-            UpAnimationState(entity: entity!, texture: sprites.textureNamed("caveiraUp")),
-            DownAnimationState(entity: entity!, texture: sprites.textureNamed("caveiraDown")),
-            LeftAnimationState(entity: entity!, texture: sprites.textureNamed("caveiraLeft")),
-            RightAnimationState(entity: entity!, texture: sprites.textureNamed("caveiraRight")),
-            IdleAnimationState(entity: entity!, texture: sprites.textureNamed("caveira"))
+            UpAnimationState(entity: entity!, texture: sprites.textureNamed("\(type.rawValue)Up")),
+            DownAnimationState(entity: entity!, texture: sprites.textureNamed("\(type.rawValue)Down")),
+            LeftAnimationState(entity: entity!, texture: sprites.textureNamed("\(type.rawValue)Left")),
+            RightAnimationState(entity: entity!, texture: sprites.textureNamed("\(type.rawValue)Right")),
+            IdleAnimationState(entity: entity!, texture: sprites.textureNamed("\(type.rawValue)"))
         ])
         stateMachine?.enter(IdleAnimationState.self)
     }
@@ -49,9 +49,9 @@ class AnimatorComponent: GKComponent {
 }
 
 extension AnimatorComponent {
-    enum AnimationType {
-        case skull
-        case pumpkin
+    enum AnimationType: String {
+        case skull = "skull"
+        case pumpkin = "pumpkin"
         
         func getTextureSet() -> SKTextureAtlas {
             switch self {
